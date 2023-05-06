@@ -9,7 +9,7 @@ export default defineConfig({
     monkey({
       entry: 'src/main.ts',
       userscript: {
-        icon: 'https://yanggggjie.github.io/video-speeder/assets/icon.png',
+        icon: 'https://github.com/yanggggjie/Video-Speeder/blob/main/assets/icon.svg',
         namespace: 'yanggggjie/video-speeder',
         match: ['https://www.bilibili.com/*', 'https://www.youtube.com/watch*']
       },

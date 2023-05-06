@@ -34,7 +34,9 @@
           break;
         }
         case 'x': {
-          video.playbackRate -= 0.25;
+          if (video.playbackRate > 0.25) {
+            video.playbackRate -= 0.25;
+          }
           showSpeedLabel.innerText = video.playbackRate
           showSpeed()
           break;
