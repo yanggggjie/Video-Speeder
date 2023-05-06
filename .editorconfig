@@ -1,0 +1,39 @@
+# 当前文件所处目录位置为root
+root = true
+
+# 选择全部文件
+[*]
+
+# 全部设定为2个空格缩进
+indent_size = 2
+
+# # 设定每个文件每行以换行（LF）结束，文件末尾添加一个新行
+# end_of_line = lf
+
+# # 以新行结尾
+# insert_final_newline = true
+
+
+# # 匹配所有以 js 和 py 为后缀名的文件
+# # 设定其编码为 UTF-8
+# [*.{js,py}]
+# charset = utf-8
+
+# # 匹配所有以 py 为后缀名的文件，设定其缩进为 4 个空格
+# [*.py]
+# indent_style = space
+# indent_size = 4
+
+# # 设定 Makefile 文件的缩进为 Tab
+# [Makefile]
+# indent_style = tab
+
+# # 匹配lib目录下所有以 js 为后缀名的文件，设定其缩进为 2 个空格
+# [lib/**.js]
+# indent_style = space
+# indent_size = 2
+
+# # 设定 package.json 和 .travis.yml 的缩进为 2 个空格
+# [{package.json,.travis.yml}]
+# indent_style = space
+# indent_size = 2
