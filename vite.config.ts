@@ -9,6 +9,8 @@ export default defineConfig({
     monkey({
       entry: 'src/main.ts',
       userscript: {
+        description: "a monkey plugin to accelerate video playback",
+        license: 'MIT',
         icon: 'https://github.com/yanggggjie/Video-Speeder/blob/main/assets/icon.svg',
         namespace: 'yanggggjie/video-speeder',
         match: ['https://www.bilibili.com/*', 'https://www.youtube.com/watch*']

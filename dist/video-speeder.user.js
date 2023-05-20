@@ -1,13 +1,15 @@
 // ==UserScript==
-// @name       video-speeder
-// @namespace  yanggggjie/video-speeder
-// @version    0.0.1
-// @author     monkey
-// @icon       https://github.com/yanggggjie/Video-Speeder/blob/main/assets/icon.svg
-// @match      https://www.bilibili.com/*
-// @match      https://www.youtube.com/watch*
-// @grant      GM_getValue
-// @grant      GM_setValue
+// @name         video-speeder
+// @namespace    yanggggjie/video-speeder
+// @version      0.0.1
+// @author       monkey
+// @description  a monkey plugin to accelerate video playback
+// @license      MIT
+// @icon         https://github.com/yanggggjie/Video-Speeder/blob/main/assets/icon.svg
+// @match        https://www.bilibili.com/*
+// @match        https://www.youtube.com/watch*
+// @grant        GM_getValue
+// @grant        GM_setValue
 // ==/UserScript==
 
 (t=>{const e=document.createElement("style");e.dataset.source="vite-plugin-monkey",e.textContent=t,document.head.append(e)})(" #showSpeedLabel.svelte-650q51{position:absolute;top:50%;left:50%;z-index:9999;font-size:30px;background-color:wheat;color:#000} ");

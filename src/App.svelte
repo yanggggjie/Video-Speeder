@@ -1,28 +1,20 @@
 <script lang="ts">
   import {GM_setValue, GM_getValue} from '$';
   import {onMount} from "svelte";
-
   // save global speed
   let globalSpeed = GM_getValue('globalSpeed') ?? 1;
   // show speed label
   let showSpeedLabel
-
-
   onMount(() => {
     const video = document.querySelector('video');
     const parent = video.parentElement;
     let timer
-
     parent.style.position = 'relative'
     parent.appendChild(showSpeedLabel);
-
-
     // init speed
     video.playbackRate = globalSpeed;
     showSpeedLabel.innerText = video.playbackRate
     showSpeed()
-
-
     // listen keydown
     document.addEventListener('keydown', function (event) {
       const key = event.key.toLowerCase();
@@ -62,15 +54,12 @@
         showSpeedLabel.style.visibility = 'hidden'
       }, 700)
     }
-
-
   })
 
 </script>
 
 <div id="showSpeedLabel" bind:this={showSpeedLabel}>
 </div>
-
 <style lang="scss">
   #showSpeedLabel {
     position: absolute;
